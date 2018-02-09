@@ -86,6 +86,9 @@ class FileListViewController: UIViewController {
         
         // Register for 3D touch
         self.registerFor3DTouch()
+        
+        // Hiding unused Cells
+        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
     
     override func viewWillAppear(_ animated: Bool) {
